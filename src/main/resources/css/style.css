@@ -1,0 +1,328 @@
+:root {
+  --cinzaBase: rgb(220, 220, 220);
+
+  --cinzaBasee: rgb(158, 158, 158);
+
+  --cinzaBasec: rgb(215, 214, 214);
+
+  --laranjaBase: rgb(228, 95, 16);
+
+  --brancoBase: rgb(255, 255, 255);
+
+  --preto: #0e0e0e;
+
+  --azulBase: #2b63f0;
+
+  --azulBasee: #00008b;
+
+  --azulBasec: rgb(116, 84, 233);
+
+  --azulDesq: #322bf0;
+
+  --roxobase: #942af1;
+
+  --roxoc: rgb(172, 161, 210);
+
+  --branco: #f3f3f3;
+
+  --verde: #357635;
+
+  --brancomenuperfil: #e6e6e6;
+
+  --brancohovermenuham: rgba(217, 217, 217, 1);
+
+  --cinzaescurofundodomudartema: #3a3a3a;
+
+  --vermelhom: #ef0000;
+
+  --ModoEscuroVermelho: #fd4848;
+
+  --ModoEscuroBase: #1f1f1f;
+
+  --ModoEscuroFilt: #131313;
+
+  --ModoEscuroMesc: #656565;
+
+  --ModoEscuroMesc2: #555555;
+
+  --ModoEscuroFontV: #5ab3ff;
+
+  --ModoEscuroFontC: #e197ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--brancoBase);
+}
+
+/* Header */
+
+header {
+  background-color: var(--preto);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.inicioIndex {
+  display: none;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 20;
+}
+.inicio {
+  z-index: 10;
+}
+header .logosite,
+header .navsite,
+header #pesquisar,
+header .usersite {
+  display: flex;
+  align-items: center;
+}
+
+header .logosite {
+  justify-content: center;
+  
+}
+header .logosite a img{
+    width: 10rem;
+}
+
+header .navsite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+header .navsite a {
+  color: var(--brancoBase);
+  transition: 0.3s;
+}
+
+header .navsite a:hover {
+  color: var(--azulBase);
+  transform: translateY(-0.2rem);
+}
+
+header #pesquisar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.formSearch {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+header #pesquisar input {
+  border: none;
+  height: 50%;
+  width: 100%;
+  border-radius: 0.8rem;
+  outline: none;
+  padding: 1rem;
+}
+
+/* Main */
+
+main {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main Cadastro/Alterar */
+
+.type-user-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--brancoBase);
+  margin: auto;
+  height: auto;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.type-user-container input {
+  width: 100%;
+}
+
+.type-user-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalInput,
+select {
+  border-radius: 20px;
+  border: 1px solid #c0c0c0;
+  outline: 0 !important;
+  box-sizing: border-box;
+  padding: 12px 15px;
+}
+
+#divProf,
+#divBusiness {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.form-btn {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
+  border-radius: 20px;
+  border: 0 !important;
+  outline: 0 !important;
+  background: var(--azulDesq);
+  color: white;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Lista Tipo */
+
+.container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card-usuario {
+  border: 1px solid #ddd;
+  width: 20rem;
+  border-radius: 8px;
+  padding: 3rem;
+  background: var(--brancoBase);
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+
+.card-usuario a {
+  color: var(--azulBase);
+}
+
+/* Footer */
+
+footer {
+  height: 12rem;
+  background-color: var(--preto);
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+footer p {
+  color: var(--brancoBase);
+}
+.inicioIndex {
+  display: none;
+}
+.close{
+    display: none;
+}
+/*------------------------------------------------------------------------*/
+/*-------------------------------- @media --------------------------------*/
+/*------------------------------- max-width ------------------------------*/
+
+@media screen and (max-width: 1000px) {
+ .close{
+    display: flex;
+    width: 20rem;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+ }
+ .card-usuario{
+    width: 17rem;
+ }
+ .container{
+    flex-direction: column;
+ }
+  /* Esconde o menu grande por padrão */
+  .inicio {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: var(--preto);
+    flex-direction: column;
+    padding: 2rem 0;
+    gap: 5rem;
+    z-index: 999;
+  }
+
+  /* Quando ativado pelo JS */
+  .inicio.ativo {
+    display: flex;
+  }
+
+  /* Deixa o menu grande (nav) vertical */
+  .inicio .navsite {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Header mobile */
+  .inicioIndex {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--preto);
+    height: 6rem;
+    padding: 1rem;
+  }
+
+  /* empurra o conteúdo para baixo */
+  main {
+    margin-top: 7rem;
+  }
+}
