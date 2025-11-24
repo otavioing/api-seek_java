@@ -3,8 +3,8 @@
 <jsp:include page="layouttopo.jsp"></jsp:include>
 	<div class="row">
 		<div class="card">
-			<h1>Página Principal</h1>
-			<p>Bem-vindo(a)!</p>
+				<h1>Página Principal</h1>
+				<p style="text-align: center;">Bem-vindo(a)!</p>
 		</div>
 	</div>
 <jsp:include page="layoutrodape.jsp"></jsp:include>
